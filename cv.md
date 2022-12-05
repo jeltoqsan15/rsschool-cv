@@ -7,21 +7,19 @@
 **GitHub:** @jeltoqsan15\
 
 ## About myself
-I’m a construction engineer. My responsibilities include planning and analyzing the progress of project. But with my passion to learn new stuff, i always seeking for oportunities to move forward and grow. Web - is my second passion, and i want to be involved in it. Not afraid to failure, mistakes - best teachers. Definitely a team player both in work and sport.
+I’m a construction engineer. My responsibilities include planning and analyzing the progress of project. Like to learn new stuff, always seeking for oportunities to move forward and grow. Not afraid to failure, mistakes - best teachers. Team player.
 
 ## Skills
-* Git/GitHub
-* Python
+* VCS (Git)
 * Java Script
-* HTML
-* CSS
+* HTML / CSS
 * SQLite
-* Linux (debian/ubuntu)
-* VSCode
+* Linux
+* VSCode, Nvim
 
 ## Code example
 ```
-function multiply(a, b){
+const multiply = (a, b) => {
   return a * b;
 }
 ```
