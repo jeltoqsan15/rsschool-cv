@@ -18,5 +18,29 @@
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: 'Open Sans';
+  margin: 0px;
+  padding: 0px;
+  background-color:#E5E5E5;;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  border: 1px solid red;
+}
+
+.main {
+  border: 1px solid red;
+}
+
+.footer {
+  border: 1px solid red;
 }
