@@ -7,7 +7,7 @@
 **GitHub:** @jeltoqsan15
 
 ## Summary
-I’m a construction engineer. My responsibilities include planning and analyzing the progress of project. Like to learn new stuff, always seeking for oportunities to move forward and grow. Not afraid to failure, mistakes - best teachers. Team player.
+As a construction engineer my responsibilities include planning and analyzing the progress of project. But i seize every oportunity to learn new stuff and enjoy challenges. I'm not afraid to failure, mistakes - best teachers. Team player.
 
 ## Skills
 * VCS (Git)
