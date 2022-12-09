@@ -25,7 +25,6 @@ body {
   font-family: 'Open Sans';
   margin: 0px;
   padding: 0px;
-  background-color:#E5E5E5;;
 }
 
 .container {
@@ -35,6 +34,21 @@ body {
 
 .header {
   border: 1px solid red;
+  color: #fff;
+  background: linear-gradient(90deg, #9967BA 0%, #0071E3 100%);
+}
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
 }
 
 .main {

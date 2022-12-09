@@ -6,7 +6,7 @@
 **Telegram:** @hello_whisky\
 **GitHub:** @jeltoqsan15
 
-## About myself
+## Summary
 I’m a construction engineer. My responsibilities include planning and analyzing the progress of project. Like to learn new stuff, always seeking for oportunities to move forward and grow. Not afraid to failure, mistakes - best teachers. Team player.
 
 ## Skills
@@ -27,6 +27,10 @@ const multiply = (a, b) => {
 ## Education
 * Tyumen State University of Architecture and Civil Engineering, 2014
 * Harvard CS50 course
+
+
+# Projects
+rsschool-cv
 
 ## Languages
 English B1
