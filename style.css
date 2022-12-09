@@ -38,7 +38,7 @@ body {
 .header {
   border: 1px solid red;
   color: #fff;
-  background-color: #062156;
+  background-color: #2c3853;
 }
 .nav-list {
   display: flex;
@@ -77,7 +77,27 @@ body {
   border: 1px solid red;
 }
 
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.narrow-section {
+  width: 35%;
+  background-color: #2c3853;
+  color: #fff;
+}
+
+.wide-section {
+  width: 65%;
+}
+
+.profile-avatar-image {
+  width: 225px;
+  border-radius: 50%;
+}
+
 .footer {
   color: #fff;
-  background-color: #062156;
+  background-color: #2c3853;
 }
