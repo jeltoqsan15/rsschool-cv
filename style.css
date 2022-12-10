@@ -26,6 +26,7 @@ body {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 20px;
+  line-height: 1.5;
   margin: 0px;
   padding: 0px;
 }
@@ -33,13 +34,14 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  min-height: 50px;
 }
 
 .header {
-  border: 1px solid red;
   color: #fff;
-  background-color: #2c3853;
+  background-color: #34495e;
 }
+
 .nav-list {
   display: flex;
   flex-wrap: wrap;
@@ -73,10 +75,6 @@ body {
   width: calc(100% - 40px);
 }
 
-.main {
-  border: 1px solid red;
-}
-
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -84,20 +82,64 @@ body {
 
 .narrow-section {
   width: 35%;
-  background-color: #2c3853;
+  background-color: #34495e;
   color: #fff;
+  padding: 10px 50px 30px;
 }
 
 .wide-section {
   width: 65%;
+  padding: 10px 50px 30px;
 }
 
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-avatar {
+  text-align: center;
+}
 .profile-avatar-image {
   width: 225px;
   border-radius: 50%;
 }
 
+.main-title {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: center;
+}
+
+.main-title::after {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 2px;
+  bottom: -19px;
+  left: 50%;
+  letter-spacing: 10px;
+  background-color: #000;
+  margin-left: -100px;
+}
+
+.section-title {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 400;
+  color: #34495e;
+}
+
 .footer {
   color: #fff;
-  background-color: #2c3853;
+  background-color: #34495e;
 }

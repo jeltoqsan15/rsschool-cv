@@ -22,6 +22,8 @@ As a construction engineer my responsibilities include planning and analyzing th
 const multiply = (a, b) => {
   return a * b;
 }
+
+console.log(multiply(2, 2));
 ```
 
 ## Education
