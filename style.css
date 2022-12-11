@@ -190,6 +190,10 @@ body {
   align-items: center;
 }
 
+.info-container {
+  padding: 18px 50px;
+}
+
 .rss-link {
   width: 120px;
   height: 45px;
