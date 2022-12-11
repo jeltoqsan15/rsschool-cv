@@ -146,6 +146,10 @@ body {
   padding-left: 0px;
 }
 
+.section-list-link:hover {
+  color: rgb(253, 237, 8);
+}
+
 .contacts-list-item {
   position: relative;
   padding-left: 35px;
