@@ -174,7 +174,26 @@ body {
   background-image: url(/rsschool-cv/assets/svg/github-fill.svg);
 }
 
+.section-list-link {
+  color: #fff;
+}
+
 .footer {
   color: #fff;
   background-color: #34495e;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rss-link {
+  width: 120px;
+  height: 45px;
+  background-image: url(/rsschool-cv/assets/svg/rs_school_js.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
