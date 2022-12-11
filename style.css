@@ -4,10 +4,15 @@
   font-weight: 400;
 }
 
-@font-face {
-  font-family: 'Roboto';
-  src: url(assets/fonts/Roboto-Bold.ttf);
-  font-weight: 700;
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .narrow-section, .wide-section {
+    width: 100%;
+  }
 }
 
 html {
@@ -192,10 +197,11 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  font-size: 16px;
 }
 
 .info-container {
-  padding: 18px 50px;
+  padding: 18px 0px;
 }
 
 .rss-link {
