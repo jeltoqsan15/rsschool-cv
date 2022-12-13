@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(/assets/fonts/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(/assets/fonts/Poppins-SemiBold.ttf);
+    font-weight: 600;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -7,67 +19,90 @@ html {
 }
 
 body {
-    font-size: 18px;
+    font-family: 'Poppins';
+    font-size: 20px;
     margin: 0;
     padding: 0;
+    background-color: #F2F2F2;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1280px;
+    max-width: 1270px;
     margin: 0 auto;
-    min-height: 50px;
-}
-.main-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    min-height: 100vh;
-    width: 70%;
-}
-
-.aside {
-    min-height: 100vh;
-    background-color: #0f0;
-    width: 30%;
-}
-
-.section-list {
-    list-style: none;
-    margin-bottom: 0;
-    padding-left: 0;
-}
-
-.contacts-item {
-    position: relative;
-    padding-left: 35px;
-}
-
-.profile-avatar {
-    text-align: center;
-}
-
-.profile-avatar-image {
-    width: 250px;
-    border-radius: 50%;
 }
 
 .header {
-    background-color: aqua;
+    background-color: #fff;
 }
 
 .nav-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 102px;
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aside {
+    width: 37%;
+    background-color: #fff;
+    padding: 60px 25px 0 102px;
+}
+
+.profile-avatar-image {
+    max-width: 100%;
 }
 
 .main {
-    background-color: #f00;
-    flex-grow: 1;
+    width: 63%;
+    background-color: #fff;
+    padding-right: 102px;
+}
+
+.section-title {
+    position: relative;
+    font-size: 33px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    top: 45px;
+    left: 0px;
+    width: 65px;
+    height: 3px;
+    background-color: #000;
+}
+
+.main-title {
+    font-size: 75px;
+    width: 363px;
+    margin: 45px 0 5px;
+}
+
+.main-title::after {
+    content: none;
+}
+
+.subtitle {
+    font-weight: normal;
+    margin-bottom: 56px;
+}
+
+.subtitle::after {
+    content: none;
 }
 
 .footer {
-    background-color: blue;
+    background-color: #fff;
 }
