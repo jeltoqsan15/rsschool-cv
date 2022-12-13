@@ -55,8 +55,13 @@ body {
     padding: 60px 25px 0 102px;
 }
 
+.profile-avatar {
+    margin-bottom: 50px;
+}
+
 .profile-avatar-image {
     max-width: 100%;
+    border-radius: 0 35px 0 35px;
 }
 
 .main {
@@ -67,7 +72,7 @@ body {
 
 .section-title {
     position: relative;
-    font-size: 33px;
+    font-size: 30px;
     font-weight: 600;
     letter-spacing: 5px;
     margin: 0;
@@ -85,9 +90,9 @@ body {
 }
 
 .main-title {
-    font-size: 75px;
+    font-size: 65px;
     width: 363px;
-    margin: 45px 0 5px;
+    margin: 90px 0 5px;
 }
 
 .main-title::after {
@@ -96,11 +101,26 @@ body {
 
 .subtitle {
     font-weight: normal;
-    margin-bottom: 56px;
+    margin-bottom: 25px;
 }
 
 .subtitle::after {
     content: none;
+}
+
+.section {
+    margin-bottom: 40px;
+    padding: 50px;
+}
+
+.section-contacts {
+    background-color: #F8DCBF;
+    border-radius: 35px 0 0 0;
+}
+
+.section-skills {
+    background-color: #F7D8D5;
+    border-radius: 0 35px 35px 0;
 }
 
 .footer {
