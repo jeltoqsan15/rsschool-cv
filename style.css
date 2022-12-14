@@ -129,9 +129,35 @@ body {
     border-radius: 35px 0 0 0;
 }
 
+.section-projects {
+    background-color: #EBDEF0;
+}
+
+.section-education {
+    background-color: #F8DCBF;
+    border-radius: 0 35px 0 35px;
+}
+
+.section-languages {
+    background-color: #F1E7DD;
+}
+.section-education .section-list-item {
+    margin-bottom: 30px;
+}
+
+.list-item-paragraph {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .section-skills {
     background-color: #F7D8D5;
     border-radius: 0 35px 35px 0;
+}
+
+.section-code {
+    background-color: #F1E7DD;
+    border-radius: 35px 0 35px 0;
 }
 
 .footer {

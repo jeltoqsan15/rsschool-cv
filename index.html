@@ -44,23 +44,25 @@
         <ul class="section-list">
           <li class="section-list-item">VCS (Git)</li>
           <li class="section-list-item">Java Script</li>
-          <li class="section-list-item">HTML / CSS</li>
+          <li class="section-list-item">HTML</li>
+          <li class="section-list-item">CSS</li>
           <li class="section-list-item">SQLite</li>
           <li class="section-list-item">Linux</li>
         </ul>
       </section>
 
-      <section id="projects" class="section">
+      <section id="projects" class="section section-projects">
         <h2 class="section-title">Projects</h2>
         <ul class="section-list">
           <li class="section-list-item"><a href="https://github.com/jeltoqsan15/rsschool-cv" class="section-list-link">rsschool-cv</a></li>
         </ul>        
       </section>
 
-      <section id="languages" class="section">
+      <section id="languages" class="section section-languages">
         <h2 class="section-title">Languages</h2>
         <ul class="section-list">
           <li class="section-list-item">English B1</li>
+          <li class="section-list-item">Russian (native)</li>
         </ul>
       </section>
     </aside>
@@ -75,27 +77,51 @@
           <p class="section-content">As a construction engineer my responsibilities include planning and analyzing the progress of project. But i seize every oportunity to learn new stuff and enjoy challenges. I'm not afraid to failure, mistakes - best teachers. Team player.</p>
         </section>
 
-        <section id="code" class="section">
+        <section id="code" class="section section-code">
           <h2 class="section-title">Code example</h2>
-          <p class="section-content">Here is my Advent of Code 2022 (day 6) solution:</p>
+          <p class="section-content">Here is my Advent of Code 2022 (day 1) solution:</p>
           <pre class="code-content"><!--
--->const input = 'mjqjpqmgbljsphdztnvjfqwrcgsmlb';
+-->const fs = require('fs');
+const readline = require('readline');
+const { Stream } = require('stream');
 
-for (let i = 0; i < input.length - 3; i++) {
-    const fourCharsSequence = input.slice(i, i + 4);
+const input_path = 'input.txt';
 
-    if (fourCharsSequence.length === new Set(fourCharsSequence).size) {
-	console.log(i + 4);
-	break;
+const input = fs.createReadStream(input_path);
+const output = new Stream;
+
+let lineReader = readline.createInterface(input, output);
+
+let topCalories = [];
+let currentCalories = 0;
+
+lineReader.on("line", function(line) {
+    if (line.length > 0) {
+        currentCalories += Number(line);
+    } else {
+        topCalories.push(currentCalories);
+        currentCalories = 0;
     }
-}<!--
+});
+
+lineReader.on('close', function() {
+    console.log(topCalories.sort( (a, b) => b - a)[0]);
+});<!--
            --></pre>
           </section>
-          <section id="education" class="section">
+          <section id="education" class="section section-education">
             <h2 class="section-title">Education</h2>
             <ul class="section-list">
-              <li class="section-list-item">Tyumen State University of Architecture and Civil Engineering, 2014</li>
-              <li class="section-list-item">CS50's Introduction to Computer Science - CS50x 2022</li>
+              <li class="section-list-item">
+                <p class="list-item-paragraph">2007 - 2013</p>
+                <p class="list-item-paragraph"><b>Engineer</b></p>
+                <p class="list-item-paragraph">Tyumen State University of Architecture and Civil Engineering</p>
+              </li>
+              <li class="section-list-item">
+                <p class="list-item-paragraph">2022 - 2022</p>
+                <p class="list-item-paragraph"><b>CS50's Introduction to Computer Science</b></p>
+                <p class="list-item-paragraph">Harvard University</p>
+              </li>
             </ul>
           </section>
   
