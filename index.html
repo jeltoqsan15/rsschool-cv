@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/img/favicon.ico">
-  <title>CV</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <title>CV</title>
 </head>
 <body>
   <header class="header">
@@ -20,87 +20,116 @@
           <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
           <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
           <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
-          <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main class="main">
-    <div class="container main-container">
-      <div class="narrow-section profile-avatar">
+  <div class="container main-container">
+    <aside class="aside">
+      <div class="profile-avatar">
         <img src="/assets/img/avatar.jpg" alt="Profile avatar" class="profile-avatar-image">
       </div>
-      <section class="wide-section profile-info">
-        <h1 class="section-title main-title">Evgeny Kalinichenko</h1>
-        <h3 class="section-title subtitle">Junior Frontend Developer</h3>
-      </section>
-      <section id="contacts" class="narrow-section contacts">
+      <section id="contacts" class="section section-contacts">
         <h2 class="section-title">Contacts</h2>
-        <ul class="section-list contacts-list">
-          <li class="contacts-list-item">tre#1621</li>
-          <li class="contacts-list-item">@hello_whisky</li>
-          <li class="contacts-list-item">jeltoqsan15</li>
+        <ul class="section-list">
+          <li class="section-list-item contacts-item">tre#1621</li>
+          <li class="section-list-item contacts-item">@hello_whisky</li>
+          <li class="section-list-item contacts-item">jeltoqsan15</li>
+          <li class="section-list-item contacts-item">realrss@mail.ru</li>
         </ul>
       </section>
-      <section id="summary" class="wide-section summary">
-        <h2 class="section-title">Summary</h2>
-        <p class="summary-content">As a construction engineer my responsibilities include planning and analyzing the progress of project. But i seize every oportunity to learn new stuff and enjoy challenges. I'm not afraid to failure, mistakes - best teachers. Team player.</p>
-      </section>
-      <section id="skills" class="narrow-section skills">
+
+      <section id="skills" class="section section-skills">
         <h2 class="section-title">Skills</h2>
-        <ul class="section-list skills-list">
-          <li class="skills-list-item">VCS (Git)</li>
-          <li class="skills-list-item">Java Script</li>
-          <li class="skills-list-item">HTML / CSS</li>
-          <li class="skills-list-item">SQLite</li>
-          <li class="skills-list-item">Linux</li>
+        <ul class="section-list">
+          <li class="section-list-item">VCS (Git)</li>
+          <li class="section-list-item">Java Script</li>
+          <li class="section-list-item">HTML</li>
+          <li class="section-list-item">CSS</li>
+          <li class="section-list-item">SQLite</li>
+          <li class="section-list-item">Linux</li>
         </ul>
       </section>
-      <section id="code" class="wide-section code">
-        <h2 class="section-title">Code example</h2>
-        <pre class="code-content"><!--
--->const multiply = (a, b) => {
-  return a * b;
-}
 
-console.log(multiply(2, 2));<!--
-        --></pre>
-      </section>
-
-      <section id="projects" class="narrow-section projects">
+      <section id="projects" class="section section-projects">
         <h2 class="section-title">Projects</h2>
-        <ul class="section-list projects-list">
-          <li class="projects-list-item"><a href="https://github.com/jeltoqsan15/rsschool-cv" class="section-list-link">rsschool-cv</a></li>
-        </ul>
-
-      </section>
-      <section id="education" class="wide-section education">
-        <h2 class="section-title">Education</h2>
-        <ul class="section-list education-list">
-          <li class="section-list-item">Tyumen State University of Architecture and Civil Engineering, 2014</li>
-        </ul>
+        <ul class="section-list">
+          <li class="section-list-item"><a href="https://github.com/jeltoqsan15/rsschool-cv" class="section-list-link">rsschool-cv</a></li>
+        </ul>        
       </section>
 
-      <section id="languages" class="narrow-section languages">
+      <section id="languages" class="section section-languages">
         <h2 class="section-title">Languages</h2>
-        <ul class="section-list languages-list">
+        <ul class="section-list">
           <li class="section-list-item">English B1</li>
+          <li class="section-list-item">Russian (native)</li>
         </ul>
       </section>
-      <section id="courses" class="wide-section courses">
-        <h2 class="section-title">Courses</h2>
-        <ul class="section-list courses-list">
-          <li class="section-list-item">CS50's Introduction to Computer Science - CS50x 2022</li>
-        </ul>
-      </section>
-    </div>
-  </main>
+    </aside>
+      <main class="main">
+        <section class="section profile-title">
+          <h1 class="section-title main-title">Evgeny Kalinichenko</h1>
+          <h3 class="section-title subtitle">Frontend Developer</h3>
+        </section>
+
+        <section id="summary" class="section section-summary">
+          <h2 class="section-title">Summary</h2>
+          <p class="section-content">As a construction engineer my responsibilities include planning and analyzing the progress of project. But i seize every oportunity to learn new stuff and enjoy challenges. I'm not afraid to failure, mistakes - best teachers. Team player.</p>
+        </section>
+
+        <section id="code" class="section section-code">
+          <h2 class="section-title">Code example</h2>
+          <p class="section-content">Here is my Advent of Code 2022 (day 1) solution:</p>
+          <pre class="code-content"><!--
+-->const fs = require('fs');
+const readline = require('readline');
+const { Stream } = require('stream');
+const input_path = 'input.txt';
+const input = fs.createReadStream(input_path);
+const output = new Stream;
+
+let lineReader = readline.createInterface(input, output);
+let topCalories = [];
+let currentCalories = 0;
+
+lineReader.on("line", function(line) {
+    if (line.length > 0) {
+        currentCalories += Number(line);
+    } else {
+        topCalories.push(currentCalories);
+        currentCalories = 0;
+    }
+});
+
+lineReader.on('close', function() {
+    console.log(topCalories.sort( (a, b) => b - a)[0]);
+});<!--
+           --></pre>
+          </section>
+          <section id="education" class="section section-education">
+            <h2 class="section-title">Education</h2>
+            <ul class="section-list">
+              <li class="section-list-item">
+                <p class="list-item-paragraph">2007 - 2013</p>
+                <p class="list-item-paragraph"><b>Engineer</b></p>
+                <p class="list-item-paragraph">Tyumen State University of Architecture and Civil Engineering</p>
+              </li>
+              <li class="section-list-item">
+                <p class="list-item-paragraph">2022 - 2022</p>
+                <p class="list-item-paragraph"><b>CS50's Introduction to Computer Science</b></p>
+                <p class="list-item-paragraph">Harvard University</p>
+              </li>
+            </ul>
+          </section>
+  
+      </main>
+  </div>
   <footer class="footer">
     <div class="container footer-container">
       <div class="info-container">@2022
         <a href="https://github.com/jeltoqsan15" class="nav-link github-link">ekalinichenko</a>
       </div>
-      <a href="https://rs.school/js-stage0/" class="rss-link"></a>
+      <a href="https://rs.school/js-stage0/" class="rss-link">RSS</a>
     </div>
   </footer>
 </body>
