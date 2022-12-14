@@ -131,6 +131,7 @@ body {
 
 .section-projects {
     background-color: #EBDEF0;
+    border-radius: 0 35px 0 35px;
 }
 
 .section-education {
@@ -140,6 +141,7 @@ body {
 
 .section-languages {
     background-color: #F1E7DD;
+    border-radius: 0 0 0 35px;
 }
 .section-education .section-list-item {
     margin-bottom: 30px;
