@@ -92,7 +92,7 @@ body {
 
 .main-title {
     font-size: 60px;
-    margin: 30px 0 5px;
+    margin: 50px 0 5px;
 }
 
 .main-title::after {
@@ -120,6 +120,8 @@ body {
 
 .section-summary {
     padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 55px;
 }
 
 .section-contacts {
