@@ -93,6 +93,7 @@ let topCalories = [];
 let currentCalories = 0;
 
 lineReader.on("line", function(line) {
+  
     if (line.length > 0) {
         currentCalories += Number(line);
     } else {
