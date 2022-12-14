@@ -162,6 +162,46 @@ body {
     border-radius: 35px 0 35px 0;
 }
 
+.section-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section-list-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.contacts-item {
+    position: relative;
+    padding-left: 35px;
+}
+
+.contacts-item::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.contacts-item:nth-child(1)::before {
+    background-image: url(/assets/svg/discord-fill.svg);
+}
+
+.contacts-item:nth-child(2)::before {
+    background-image: url(/assets/svg/telegram-fill.svg);
+}
+
+.contacts-item:nth-child(3)::before {
+    background-image: url(/assets/svg/github-fill.svg);
+}
+
+.contacts-item:nth-child(4)::before {
+    background-image: url(/assets/svg/envelope.svg);
+}
+
 .footer {
     background-color: #fff;
 }
