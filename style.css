@@ -50,6 +50,10 @@ body {
 }
 
 .aside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
     width: 37%;
     background-color: #fff;
     padding: 60px 25px 0 102px;
@@ -66,6 +70,10 @@ body {
 }
 
 .main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
     width: 63%;
     background-color: #fff;
     padding-right: 102px;
@@ -121,7 +129,7 @@ body {
 .section-summary {
     padding-top: 0;
     padding-bottom: 0;
-    margin-bottom: 60px;
+    margin-bottom: 0;
 }
 
 .section-contacts {
