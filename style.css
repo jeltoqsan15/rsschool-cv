@@ -44,6 +44,28 @@ body {
     margin: 0;
 }
 
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    line-height: 50px;
+}
+
+.nav-link::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0px;
+    height: 3px;
+    width: 0;
+    background-color: #000;
+    transition: .5s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
 .main-container {
     display: flex;
     flex-wrap: wrap;
@@ -109,7 +131,7 @@ body {
 
 .subtitle {
     font-weight: normal;
-    /* margin-bottom: 40px; */
+    margin-bottom: 0;
 }
 
 .subtitle::after {
