@@ -1,12 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-  </body>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <title>CV</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container main-container">
+    <aside class="aside">
+      <div class="profile-avatar">
+        <img src="/assets/img/avatar.jpg" alt="Profile avatar" class="profile-avatar-image">
+      </div>
+      <section id="contacts" class="section section-contacts">
+        <h2 class="section-title">Contacts</h2>
+        <ul class="section-list">
+          <li class="section-list-item contacts-item">tre#1621</li>
+          <li class="section-list-item contacts-item">@hello_whisky</li>
+          <li class="section-list-item contacts-item">jeltoqsan15</li>
+          <li class="section-list-item contacts-item">realrss@mail.ru</li>
+        </ul>
+      </section>
+
+      <section id="skills" class="section section-skills">
+        <h2 class="section-title">Skills</h2>
+        <ul class="section-list">
+          <li class="section-list-item">VCS (Git)</li>
+          <li class="section-list-item">Java Script</li>
+          <li class="section-list-item">HTML</li>
+          <li class="section-list-item">CSS</li>
+          <li class="section-list-item">SQLite</li>
+          <li class="section-list-item">Linux</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section section-projects">
+        <h2 class="section-title">Projects</h2>
+        <ul class="section-list">
+          <li class="section-list-item"><a href="https://github.com/jeltoqsan15/rsschool-cv" class="nav-link section-list-link">rsschool-cv</a></li>
+        </ul>        
+      </section>
+
+      <section id="languages" class="section section-languages">
+        <h2 class="section-title">Languages</h2>
+        <ul class="section-list">
+          <li class="section-list-item">English B1</li>
+          <li class="section-list-item">Russian (native)</li>
+        </ul>
+      </section>
+    </aside>
+      <main class="main">
+        <section class="section profile-title">
+          <h1 class="section-title main-title">Evgeny Kalinichenko</h1>
+          <h3 class="section-title subtitle">Frontend Developer</h3>
+        </section>
+
+        <section id="summary" class="section section-summary">
+          <h2 class="section-title">Summary</h2>
+          <p class="section-content">As a construction engineer my responsibilities include planning and analyzing the progress of project. But i seize every oportunity to learn new stuff and enjoy challenges. I'm not afraid to failure, mistakes - best teachers. Team player.</p>
+        </section>
+
+        <section id="code" class="section section-code">
+          <h2 class="section-title">Code example</h2>
+          <p class="section-content">Here is my Advent of Code 2022 (day 1) solution:</p>
+          <pre class="code-content"><!--
+-->const fs = require('fs');
+const readline = require('readline');
+const { Stream } = require('stream');
+const input_path = 'input.txt';
+const input = fs.createReadStream(input_path);
+const output = new Stream;
+
+let lineReader = readline.createInterface(input, output);
+let topCalories = [];
+let currentCalories = 0;
+
+lineReader.on("line", function(line) {
+  
+    if (line.length > 0) {
+        currentCalories += Number(line);
+    } else {
+        topCalories.push(currentCalories);
+        currentCalories = 0;
+    }
+});
+
+lineReader.on('close', function() {
+    console.log(topCalories.sort( (a, b) => b - a)[0]);
+});<!--
+           --></pre>
+          </section>
+          <section id="education" class="section section-education">
+            <h2 class="section-title">Education</h2>
+            <ul class="section-list">
+              <li class="section-list-item">
+                <p class="list-item-paragraph">2007 - 2013</p>
+                <p class="list-item-paragraph"><b>Engineer</b></p>
+                <p class="list-item-paragraph">Tyumen State University of Architecture and Civil Engineering</p>
+              </li>
+              <li class="section-list-item">
+                <p class="list-item-paragraph">2022 - 2022</p>
+                <p class="list-item-paragraph"><b>CS50's Introduction to Computer Science</b></p>
+                <p class="list-item-paragraph">Harvard University</p>
+              </li>
+            </ul>
+          </section>
+  
+      </main>
+  </div>
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="info-container">@2022
+        <a href="https://github.com/jeltoqsan15" class="github-link">GitHub</a>
+      </div>
+      <a href="https://rs.school/js-stage0/" class="rss-link"></a>
+    </div>
+  </footer>
+</body>
 </html>
