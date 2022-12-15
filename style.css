@@ -89,6 +89,7 @@ body {
 .profile-avatar-image {
     max-width: 341px;
     border-radius: 0 35px 0 35px;
+    opacity: 0.8;
 }
 
 .main {
@@ -141,6 +142,7 @@ body {
 .section {
     margin-bottom: 40px;
     padding: 50px;
+    opacity: 0.8;
 }
 
 .profile-title {
@@ -234,4 +236,39 @@ body {
 
 .footer {
     background-color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 102px;
+    padding-right: 75px;
+}
+
+.github-link {
+    position: relative;
+    padding-left: 55px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #000;
+}
+
+.github-link::before {
+    position: absolute;
+    content: "";
+    left: 25px;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url(/assets/svg/github-fill.svg);
+}
+
+.rss-link {
+    width: 121px;
+    height: 45px;
+    background-image: url(/assets/svg/rs_school_js.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
