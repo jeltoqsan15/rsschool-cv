@@ -25,3 +25,13 @@ const multiply = (a, b) => {
 
 console.log(multiply(2, 2));
 ```
+
+## Education
+* Tyumen State University of Architecture and Civil Engineering, 2014
+* Harvard CS50 course
+
+# Projects
+rsschool-cv
+
+## Languages
+English B1
